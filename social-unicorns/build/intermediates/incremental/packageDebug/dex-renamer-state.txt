@@ -1,0 +1,7 @@
+#Sat Feb 10 16:05:57 EST 2018
+base.0=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a0175e08a60d7b3c614f2f6ecae799c6e601eadb
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_52e5d736e98d51e76e59680493bfc8b0bae0ca2f/classes.dex
+base.1=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_52e5d736e98d51e76e59680493bfc8b0bae0ca2f
+file.0=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a0175e08a60d7b3c614f2f6ecae799c6e601eadb/classes.dex

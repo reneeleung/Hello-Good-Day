@@ -1,0 +1,134 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:2:1-25:12
+	package
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:7:5-64
+	android:name
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:7:22-62
+application
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:9:5-23:19
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/reneeleung/.android/build-cache/e310ea6ce647c95129a7b41c4243b68a1b6501f3/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/reneeleung/.android/build-cache/0b1ebe0c475dc8c36785b8648272c29a0536226d/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/reneeleung/.android/build-cache/ae8d3d3c9b84460a91323ceef7935ecf083fd179/output/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/reneeleung/.android/build-cache/4f3a31741267080cc40a7f44c96b2d61a3960737/output/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /Users/reneeleung/.android/build-cache/a1218b60ded1774282962d6cfb2d44e21e5be887/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /Users/reneeleung/.android/build-cache/b1da177a6a4fbaa9b813a1eaf4133fe63c17c71e/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.2.0] /Users/reneeleung/.android/build-cache/e608e208677c97c46d00f11bb82ab95b0d3aabfd/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/reneeleung/.android/build-cache/be7a9ea8654de20809d0ea5e3fa8cff5d10cef4e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/reneeleung/.android/build-cache/a263fd13ee389795b8b7179d251357d9bb871f68/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/reneeleung/.android/build-cache/cbe6b5389b6033052be322c6212ecc139b2ecd29/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/reneeleung/.android/build-cache/3fc962284bd73a74010e977e4afcd1b068094448/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/reneeleung/.android/build-cache/0a65411b99eae0cbe9f27b8868d1ee7a8d93c2d0/output/AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:12:9-41
+	android:supportsRtl
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:14:9-35
+	android:roundIcon
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:13:9-54
+	android:allowBackup
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:15:9-40
+activity#me.reneeleung.social_unicorns.MainActivity
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:16:9-22:20
+	android:name
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:16:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/reneeleung/.android/build-cache/e310ea6ce647c95129a7b41c4243b68a1b6501f3/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/reneeleung/.android/build-cache/0b1ebe0c475dc8c36785b8648272c29a0536226d/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/reneeleung/.android/build-cache/ae8d3d3c9b84460a91323ceef7935ecf083fd179/output/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/reneeleung/.android/build-cache/4f3a31741267080cc40a7f44c96b2d61a3960737/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.2] /Users/reneeleung/.android/build-cache/3906573484adb236378bef1a55afd4aa23d2aef4/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.2] /Users/reneeleung/.android/build-cache/a1218b60ded1774282962d6cfb2d44e21e5be887/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.0.2] /Users/reneeleung/.android/build-cache/b1da177a6a4fbaa9b813a1eaf4133fe63c17c71e/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.2.0] /Users/reneeleung/.android/build-cache/e608e208677c97c46d00f11bb82ab95b0d3aabfd/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/reneeleung/.android/build-cache/be7a9ea8654de20809d0ea5e3fa8cff5d10cef4e/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/reneeleung/.android/build-cache/a263fd13ee389795b8b7179d251357d9bb871f68/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/reneeleung/.android/build-cache/cbe6b5389b6033052be322c6212ecc139b2ecd29/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/reneeleung/.android/build-cache/3fc962284bd73a74010e977e4afcd1b068094448/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /Users/reneeleung/.android/build-cache/0a65411b99eae0cbe9f27b8868d1ee7a8d93c2d0/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.2.0] /Users/reneeleung/.android/build-cache/e310ea6ce647c95129a7b41c4243b68a1b6501f3/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:21:9-24:46
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:23:19-52
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:24:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:22:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:21:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:28:9-31:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:31:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.2] /Users/reneeleung/.android/build-cache/c140ed18068bcec742439e55de5719fd1fa6632a/output/AndroidManifest.xml:29:13-58
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.0.2] /Users/reneeleung/.android/build-cache/c355f3eeb46d7463fe9e1f0d3ba3386d7f1eda34/output/AndroidManifest.xml:20:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.0.2] /Users/reneeleung/.android/build-cache/e74ca9d984f47468647962efc93c1731ce6ff5bf/output/AndroidManifest.xml:9:13-58
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.0.2] /Users/reneeleung/.android/build-cache/b1da177a6a4fbaa9b813a1eaf4133fe63c17c71e/output/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.0.2] /Users/reneeleung/.android/build-cache/b1da177a6a4fbaa9b813a1eaf4133fe63c17c71e/output/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.0.2] /Users/reneeleung/.android/build-cache/b1da177a6a4fbaa9b813a1eaf4133fe63c17c71e/output/AndroidManifest.xml:22:13-58

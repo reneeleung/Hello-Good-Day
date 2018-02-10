@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher.png",
+        "source": "/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/res/merged/debug/mipmap-hdpi/ic_launcher_round.png",
+        "source": "/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    }
+]
