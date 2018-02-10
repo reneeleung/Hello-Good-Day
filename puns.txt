@@ -1,5 +1,5 @@
 { 
-  "puns": {
+  "punlist": {
     "pun": [
       {
         "key": "bird"
