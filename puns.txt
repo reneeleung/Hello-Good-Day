@@ -1,17 +1,66 @@
-bird Doctor's are saying not to worry about the bird flu because it's tweetable.
-older I always wanted to marry an Archeologist. The older I would get, the more interested she would become!
-M&M Going for a walk because I want to stay healthy. Taking along a box of M&M's because let's be honest here.
-gummy I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that.
-cake It's always a good idea to make friends with babies. That's free cake once a year for a lifetime.
-Oreo Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo.
-chips Up until I bought this bag of chips I thought the air was free.
-seafood I am on a seafood diet. Every time I see food, I eat it.
-vegetable I was going to share a vegetable joke but it's corny.
-dog Occasionally, a true friend gives his paw not his hand...
-people TRUE FRIENDSHIP: Walking into a persons house and your wifi connects automatically.
-math You give me Epsilon, I give you Delta. Together, we find limits.
-music Putting your iPod on shuffle around your friends is like playing Russian roulette with their respect for you.
-clock Have you ever tried to eat a clock? It's very time consuming.
-time Have you ever tried to eat a clock? It's very time consuming.
-watch Have you ever tried to eat a clock? It's very time consuming.
-girl I met a girl at an internet cafe, but we didn't click.
+{ 
+  "puns": {
+    "pun": [
+      {
+        "key": "bird"
+        "phrase": "Doctors say not to worry about the bird flu because it's tweetable."
+      },
+      {
+        "key": "older"
+        "phrase": "I always wanted to marry an Archeologist. The older I would get, the more interested they would become!"
+      },
+      {
+        "key": "M&M"
+        "phrase": "Going for a walk because I want to stay healthy. Taking along a box of M&M's because let's be honest here."
+      },
+      {
+        "key": "gummy"
+        "phrase": "I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that."
+      },
+      {
+        "key": "cake"
+        "phrase": "It's always a good idea to make friends with babies. That's free cake once a year for a lifetime."
+      },
+      {
+        "key": "oreo"
+        "phrase": "Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo."
+      },
+      {
+        "key": "chips"
+        "phrase": "Up until I bought this bag of chips I thought the air was free."
+      },
+      {
+        "key": "seafood"
+        "phrase": "I am on a seafood diet. Every time I see food, I eat it."
+      },
+      {
+        "key": "vegetable"
+        "phrase": "I was going to share a vegetable joke but it's corny."
+      },
+      {
+        "key": "dog"
+        "phrase": "Occasionally, a true friend gives their paw not their hand..."
+      },
+      {
+        "key": "people"
+        "phrase": "TRUE FRIENDSHIP: Walking into a persons house and your wifi connects automatically."
+      },
+      {
+        "key": "math"
+        "phrase": "You give me Epsilon, I give you Delta. Together, we find limits."
+      },
+      {
+        "key": "music"
+        "phrase": "Putting your iPod on shuffle around your friends is like playing Russian roulette with their respect for you."
+      },
+      {
+        "key": "time"
+        "phrase": "Have you ever tried to eat a clock? It's very time consuming."
+      },
+      {
+        "key": "girl"
+        "phrase": "I met a girl at an internet cafe, but we didn't click."
+      }
+    ]
+  }
+}
