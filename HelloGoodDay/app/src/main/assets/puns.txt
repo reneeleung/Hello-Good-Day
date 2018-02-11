@@ -1,6 +1,6 @@
 bird|Doctors say not to worry about the bird flu because it's tweetable
 older|I always wanted to marry an Archeologist, The older I would get, the more interested they would become!
-M&M|Going for a walk because I want to stay healthy. Taking along a box of M&M's because let's be honest here
+M&M|Going for a walk because I want to stay healthy, Taking along a box of M&M's because let's be honest here
 gummy|I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that
 cake|It's always a good idea to make friends with babies, That's free cake once a year for a lifetime
 oreo|Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo
@@ -21,7 +21,7 @@ seminar|Work hard in silence, let your success be your noise
 restaurant|Wisdom is never on the menu, you have to own the restaurant
 car|Best pickup line ever!
 technology|It's still magic even if you know how it's done
-cool|You is cool. You is smart, You is important!
+cool|You is cool, You is smart, You is important!
 electronics|They are rather electrifying
 product|Have less, Do More, Be MORE
 subwoofer|If we ampilfy everything, we hear nothing
@@ -82,7 +82,7 @@ hand|Many hands make light work
 spider|When spider webs unite, they can tie up a lion
 wall|United we stand, divided we fall
 cards|Life is like a game of cards, The hand that is dealt you represents determinism, the way you play it is free will
-dice|Life is like the dice that, falling, still show a different face. So life, though it remains the same, is always presenting different aspects
+dice|Life is like the dice that, falling, still show a different face, So life, though it remains the same, is always presenting different aspects
 bear|Our life's a stage, a comedy: either learn to play and take it lightly, or bear its troubles patiently
 bicycle|Life is like riding a bicycle, To keep your balance you must keep moving
 instrument|Life is something like a trumpet, If you don't put anything in you don't get anything out
