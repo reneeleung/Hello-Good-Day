@@ -301,20 +301,24 @@ public class CloudVisionRequest extends AppCompatActivity {
                                         pun = pun + label_to_query +": " + result[1].substring(0, result[1].length()-1) + "\n";
                                         Log.d(TAG, "pun is now updated: " + pun);
 
-                                        if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
                                         visionAPIData.setText(pun);
+
                                         imageUploadProgress.setVisibility(View.GONE);
 
                                     } catch (Exception e) {
                                         e.printStackTrace();
                                     }
                                 } else {
+                                    if (pun == "") visionAPIData.setText("Sorry, no puns for your image. Please try again.");
+                                    imageUploadProgress.setVisibility(View.GONE);
                                     Log.d(TAG, "Firebase query result is null");
                                 }
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
                         }
+
+
 
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
@@ -326,9 +330,7 @@ public class CloudVisionRequest extends AppCompatActivity {
                         pun += labels.get(i) +": " + var + "\n";
                     }*/
                 }
-                /*if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
-                visionAPIData.setText(pun);
-                imageUploadProgress.setVisibility(View.GONE);*/
+                visionAPIData.setText("Loading Result ...");
             }
         }.execute();
     }
