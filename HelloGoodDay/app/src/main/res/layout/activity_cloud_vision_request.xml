@@ -5,12 +5,26 @@
     android:id="@+id/activity_cloud_vision_request"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD:HelloGoodDay/app/src/main/res/layout/activity_cloud_vision_request.xml
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ca.yzlin.hellogoodday.CloudVisionRequest"
     android:background="@drawable/background">
+=======
+    tools:context="me.reneeleung.social_unicorns.MainActivity"
+    android:background="@drawable/background">
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+>>>>>>> c527298... Add background and layout:social-unicorns/build/intermediates/res/merged/debug/layout/activity_main.xml
 
     <ImageView
         android:id="@+id/imageView"
