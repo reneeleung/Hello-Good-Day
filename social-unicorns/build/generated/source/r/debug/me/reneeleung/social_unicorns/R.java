@@ -2519,7 +2519,7 @@ containing a value of this type.
         public static final int submenuarrow=0x7f0b0051;
         public static final int submit_area=0x7f0b0062;
         public static final int tabMode=0x7f0b0014;
-        public static final int takePicture=0x7f0b0067;
+        public static final int takePicture=0x7f0b0068;
         public static final int text=0x7f0b007f;
         public static final int text2=0x7f0b007d;
         public static final int textSpacerNoButtons=0x7f0b0045;
@@ -2532,7 +2532,7 @@ containing a value of this type.
         public static final int topPanel=0x7f0b0049;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b001a;
-        public static final int visionAPIData=0x7f0b0068;
+        public static final int visionAPIData=0x7f0b0067;
         public static final int wide=0x7f0b002e;
         public static final int withText=0x7f0b002b;
         public static final int wrap=0x7f0b000b;

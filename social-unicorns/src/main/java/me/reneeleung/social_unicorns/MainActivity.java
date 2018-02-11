@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.imageView);
         takePicture = (Button) findViewById(R.id.takePicture);
         imageUploadProgress = (ProgressBar) findViewById(R.id.imageUploadProgress);
+        imageUploadProgress.setVisibility(View.GONE);
         visionAPIData = (TextView) findViewById(R.id.visionAPIData);
 
         feature = new Feature();
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
     private void callCloudVision(final Bitmap bitmap) throws IOException {
         // Switch text to loading
         visionAPIData.setText("loading...");
+        imageUploadProgress.setVisibility(View.VISIBLE);
 
         // Do the real work in an async task, because we need to use the network anyway
         new AsyncTask<Object, Void, String>() {
@@ -213,23 +215,21 @@ public class MainActivity extends AppCompatActivity {
             }
 
             protected void onPostExecute(String result) {
-                visionAPIData.setText(result);
+                // find pun for each label / one with highest score
+                String [] objects = result.split("\n");
+                ArrayList<String> labels = new ArrayList<String>();
+                for (int i = 0; i < objects.length; ++i) {
+                    labels.add(objects[i].substring(0, objects[i].lastIndexOf(' ')));
+                }
+
+                String pun = "";
+                for (int i = 0; i < labels.size(); ++i) {
+                    pun = pun + labels.get(i) + "; ";
+                }
+                visionAPIData.setText(pun);
+                imageUploadProgress.setVisibility(View.GONE);
             }
         }.execute();
-    }
-
-    @NonNull
-    private Image getImageEncodeImage(Bitmap bitmap) {
-        Image base64EncodedImage = new Image();
-        // Convert the bitmap to a JPEG
-        // Just in case it's a format that Android understands but Cloud Vision
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 90, byteArrayOutputStream);
-        byte[] imageBytes = byteArrayOutputStream.toByteArray();
-
-        // Base64 encode the JPEG
-        base64EncodedImage.encodeContent(imageBytes);
-        return base64EncodedImage;
     }
 
     private String convertResponseToString(BatchAnnotateImagesResponse response) {

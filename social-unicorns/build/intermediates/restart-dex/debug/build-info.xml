@@ -6,26 +6,26 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1518305474814"
+    timestamp="1518312108184"
     token="5264426221372591621"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="451" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="59" />
+        duration="0" />
     <task
         name="verifier"
-        duration="3" />
+        duration="0" />
 
     <artifact
-        location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
+        location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/outputs/apk/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -102,17 +102,22 @@
         <artifact
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1518305474814"
+        timestamp="1518311071051"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1518312108184"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>

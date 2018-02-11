@@ -743,7 +743,7 @@ int id status_bar_latest_event_content 0x7f0b006f
 int id submenuarrow 0x7f0b0051
 int id submit_area 0x7f0b0062
 int id tabMode 0x7f0b0014
-int id takePicture 0x7f0b0067
+int id takePicture 0x7f0b0068
 int id text 0x7f0b007f
 int id text2 0x7f0b007d
 int id textSpacerNoButtons 0x7f0b0045
@@ -756,7 +756,7 @@ int id top 0x7f0b0033
 int id topPanel 0x7f0b0049
 int id up 0x7f0b0008
 int id useLogo 0x7f0b001a
-int id visionAPIData 0x7f0b0068
+int id visionAPIData 0x7f0b0067
 int id wide 0x7f0b002e
 int id withText 0x7f0b002b
 int id wrap 0x7f0b000b
