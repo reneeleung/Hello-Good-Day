@@ -47,6 +47,7 @@
             android:name=".CloudVisionRequest"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".EditPet"></activity>
+        <activity android:name=".SavePun"></activity>
     </application>
 
 </manifest>
