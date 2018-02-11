@@ -31,14 +31,21 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
 
-    <Button
-        android:id="@+id/takePicture"
+    <ImageButton
+        android:id="@+id/picture_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pic time!"
+        app:srcCompat="@drawable/camera_btn"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:paddingBottom="15dp" />
+        android:paddingBottom="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="takePicture" />
+
 
     <ProgressBar
         android:id="@+id/imageUploadProgress"

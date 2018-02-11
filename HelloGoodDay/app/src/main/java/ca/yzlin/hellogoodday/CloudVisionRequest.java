@@ -16,8 +16,9 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -50,15 +51,15 @@ import java.util.List;
 
 public class CloudVisionRequest extends AppCompatActivity {
     private static final String TAG = "CloudVisionRequest";
+    private static final int CAMERA_REQUEST_CODE = 10001;
     private static final int RECORD_REQUEST_CODE = 10002;
     private static final String CLOUD_VISION_API_KEY = "AIzaSyA5XvgRCsC4ZmTwZuUp_4QDSQqwwHccDII";
+    public static final String BITMAP = "ca.yzlin.HelloGoodDay.bitmap";
 
     private static final String ANDROID_PACKAGE_HEADER = "X-Android-Package";
     private static final String ANDROID_CERT_HEADER = "X-Android-Cert";
 
-    Button takePicture;
     ProgressBar imageUploadProgress;
-    //Spinner spinnerVisionAPI;
     TextView visionAPIData;
     ImageView imageView;
 
@@ -73,7 +74,6 @@ public class CloudVisionRequest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cloud_vision_request);
         imageView = (ImageView) findViewById(R.id.imageView);
-        takePicture = (Button) findViewById(R.id.takePicture);
         imageUploadProgress = (ProgressBar) findViewById(R.id.imageUploadProgress);
         imageUploadProgress.setVisibility(View.GONE);
         visionAPIData = (TextView) findViewById(R.id.visionAPIData);
@@ -95,6 +95,40 @@ public class CloudVisionRequest extends AppCompatActivity {
         }
     }
 
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent objEvent) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            onBackPressed();
+            return true;
+        }
+        return super.onKeyUp(keyCode, objEvent);
+    }
+
+    @Override
+    public void onBackPressed() {
+        //finish();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        return;
+    }
+
+    public void takePicture(View view){
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, CAMERA_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode,
+                                    Intent data) {
+        if (requestCode == CAMERA_REQUEST_CODE && resultCode == RESULT_OK) {
+            bitmap = (Bitmap) data.getExtras().get("data");
+            Intent intent = new Intent(this, CloudVisionRequest.class);
+            intent.putExtra(BITMAP, bitmap);
+            startActivity(intent);
+        }
+    }
+
     private void makeRequest(String permission) {
         ActivityCompat.requestPermissions(this, new String[]{permission}, RECORD_REQUEST_CODE);
     }
@@ -107,9 +141,9 @@ public class CloudVisionRequest extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if (checkPermission(android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-            takePicture.setVisibility(View.VISIBLE);
+            //takePicture.setVisibility(View.VISIBLE);
         } else {
-            takePicture.setVisibility(View.INVISIBLE);
+            //takePicture.setVisibility(View.INVISIBLE);
             makeRequest(android.Manifest.permission.CAMERA);
         }
     }
