@@ -39,32 +39,6 @@
         android:layout_below="@+id/title"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:id="@+id/history_btn"
-        android:text="History"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="displayHistory" />
-
-    <ImageButton
-        android:id="@+id/add_text_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        android:layout_alignTop="@+id/camera_btn"
-        android:layout_alignEnd="@+id/title"
-        android:layout_marginTop="12dp"
-        android:adjustViewBounds="true"
-        android:maxWidth="100dp"
-        android:maxHeight="100dp"
-        android:scaleType="fitCenter"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
-        android:layout_alignBottom="@+id/camera_btn"
-        android:layout_toEndOf="@+id/history_btn"
-        android:onClick="addText" />
-
     <ImageButton
         android:id="@+id/camera_btn"
         android:layout_width="wrap_content"
@@ -78,5 +52,43 @@
         android:layout_below="@+id/sunPic"
         android:layout_alignStart="@+id/sunPic"
         android:onClick="takePicture" />
+
+    <Button
+        android:id="@+id/editpet"
+        android:text="Edit Pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="editpet"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/camera_btn"
+        android:background="@color/cast_expanded_controller_text_color"
+        android:textColor="@color/cast_intro_overlay_button_background_color" />
+
+    <ImageButton
+        android:id="@+id/add_text_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:adjustViewBounds="true"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:scaleType="fitCenter"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:onClick="addText"
+        android:layout_alignBottom="@+id/camera_btn"
+        android:layout_alignStart="@+id/history_btn"
+        android:layout_marginStart="14dp"
+        android:layout_alignEnd="@+id/title" />
+
+    <Button
+        android:id="@+id/history_btn"
+        android:text="History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="displayHistory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/sunPic"
+        android:background="@color/cast_libraries_material_featurehighlight_text_body_color"
+        android:textColor="@color/cast_intro_overlay_button_background_color" />
 
 </RelativeLayout>
