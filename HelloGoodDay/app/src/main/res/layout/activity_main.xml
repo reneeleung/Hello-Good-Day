@@ -61,8 +61,8 @@
         android:onClick="editpet"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/camera_btn"
-        android:background="@color/cast_expanded_controller_text_color"
-        android:textColor="@color/cast_intro_overlay_button_background_color" />
+        android:background="?attr/colorButtonNormal"
+        android:textColor="@android:color/black" />
 
     <ImageButton
         android:id="@+id/add_text_btn"
@@ -88,7 +88,7 @@
         android:onClick="displayHistory"
         android:layout_alignParentBottom="true"
         android:layout_alignEnd="@+id/sunPic"
-        android:background="@color/cast_libraries_material_featurehighlight_text_body_color"
-        android:textColor="@color/cast_intro_overlay_button_background_color" />
+        android:background="?attr/colorButtonNormal"
+        android:textColor="@android:color/black" />
 
 </RelativeLayout>
