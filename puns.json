@@ -1,0 +1,66 @@
+{ 
+  "punlist": {
+    "pun": [
+      {
+        "key": "bird",
+        "phrase": "Doctors say not to worry about the bird flu because it's tweetable."
+      },
+      {
+        "key": "older",
+        "phrase": "I always wanted to marry an Archeologist. The older I would get, the more interested they would become!"
+      },
+      {
+        "key": "M&M",
+        "phrase": "Going for a walk because I want to stay healthy. Taking along a box of M&M's because let's be honest here."
+      },
+      {
+        "key": "gummy",
+        "phrase": "I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that."
+      },
+      {
+        "key": "cake",
+        "phrase": "It's always a good idea to make friends with babies. That's free cake once a year for a lifetime."
+      },
+      {
+        "key": "oreo",
+        "phrase": "Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo."
+      },
+      {
+        "key": "chips",
+        "phrase": "Up until I bought this bag of chips I thought the air was free."
+      },
+      {
+        "key": "seafood",
+        "phrase": "I am on a seafood diet. Every time I see food, I eat it."
+      },
+      {
+        "key": "vegetable",
+        "phrase": "I was going to share a vegetable joke but it's corny."
+      },
+      {
+        "key": "dog",
+        "phrase": "Occasionally, a true friend gives their paw not their hand..."
+      },
+      {
+        "key": "people",
+        "phrase": "TRUE FRIENDSHIP: Walking into a persons house and your wifi connects automatically."
+      },
+      {
+        "key": "math",
+        "phrase": "You give me Epsilon, I give you Delta. Together, we find limits."
+      },
+      {
+        "key": "music",
+        "phrase": "Putting your iPod on shuffle around your friends is like playing Russian roulette with their respect for you."
+      },
+      {
+        "key": "time",
+        "phrase": "Have you ever tried to eat a clock? It's very time consuming."
+      },
+      {
+        "key": "girl",
+        "phrase": "I met a girl at an internet cafe, but we didn't click."
+      }
+    ]
+  }
+}
