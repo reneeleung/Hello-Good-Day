@@ -59,3 +59,35 @@ partysupply|Partayyy
 drinkware|Remember to stay hydrated!
 functionhall|Halls lead down many paths
 room|There is always a good way out
+rain|Behind every storm is a rainbow, waiting to shine through
+mouth|Brushing your teeth today gives you +2 points, Congrats!
+selfie|Are you building a collection of beautiful pictures
+screen|There's one screen between you and a complex, evolving world
+drink|Water should be had at least once a day
+necklace|Good sayings are like pearls strung together
+move|We are what we repeatedly do, Excellence, therefore, is not an act but a habit
+think|You cannot plough a field by turning it over in your mind
+hard|An oak is not felled at one blow
+light|Amazing how we can light tomorrow with today
+puck|You miss 100% of the shots you don't take
+grey|Success is the sum of small efforts, repeated day in and day out
+carpet|If one only looks at the ground, how will they know the blue skies above
+floor|If one only looks at the ground, how will they know the blue skies above
+cable|Long wires or thin wires, Which one do you prefer
+code|Spaces or tabs
+clothes|Time in its aging course teaches all things
+fire|Divide the fire and you will soon put it out
+three|All for one and one for all
+hand|Many hands make light work
+spider|When spider webs unite, they can tie up a lion
+wall|United we stand, divided we fall
+cards|Life is like a game of cards, The hand that is dealt you represents determinism, the way you play it is free will
+dice|Life is like the dice that, falling, still show a different face. So life, though it remains the same, is always presenting different aspects
+bear|Our life's a stage, a comedy: either learn to play and take it lightly, or bear its troubles patiently
+bicycle|Life is like riding a bicycle, To keep your balance you must keep moving
+instrument|Life is something like a trumpet, If you don't put anything in you don't get anything out
+shadow|Most of the shadows of this life are caused by our standing in our own sunshine
+water|Water should be had at least once a day
+food|The best food satisfies the stomache and the mind
+meal|A smiling face is half the meal
+dessert|In eating, a third of the stomach should be filled with food, a third with drink and the rest left empty for dessert
