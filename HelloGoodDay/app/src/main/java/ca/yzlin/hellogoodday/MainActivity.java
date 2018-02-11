@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void editpet(View view){
-        Intent intent = new Intent(this, HistoryText.class);
+        Intent intent = new Intent(this, EditPet.class);
         startActivity(intent);
     }
 
