@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,7 +34,9 @@ public class AddText extends AppCompatActivity {
     public void saveText(View view){
         // getShared preferences
         SharedPreferences props = getSharedPreferences(MainActivity.SAVED_PROPS_FILE, 0);
+        SharedPreferences descrip = getSharedPreferences(MainActivity.SAVED_DESCRIP_FILE, 0);
         SharedPreferences.Editor propsEditor = props.edit();
+        SharedPreferences.Editor descripEditor = descrip.edit();
 
         String text = ((EditText) findViewById(R.id.text_field)).getText().toString();
         String loca = "false";
@@ -49,16 +52,17 @@ public class AddText extends AppCompatActivity {
         int propId = props.getInt("indexAt", -1);
         propId++;
         propsEditor.putInt("indexAt", propId);
+        int descripId = descrip.getInt("indexAt", -1);
+        descripId++;
+        descripEditor.putInt("indexAt", descripId);
 
-        Set<String> newProps = new HashSet<String>();
-        newProps.add(date);
-        newProps.add(loca);
-        newProps.add(longi);
-        newProps.add(lati);
-        newProps.add(text);
-        propsEditor.putStringSet(String.valueOf(propId), newProps);
+        String fields = date + " " + String.valueOf(descripId) + " " + loca + " " + longi + " " + lati;
+        propsEditor.putString(String.valueOf(propId), fields);
+        descripEditor.putString(String.valueOf(descripId), text);
 
         // Commit edits
         propsEditor.commit();
+        descripEditor.commit();
+        finish();
     }
 }

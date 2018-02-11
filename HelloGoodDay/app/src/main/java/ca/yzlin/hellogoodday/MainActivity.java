@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     public static final String SAVED_PROPS_FILE = "ca.yzlin.HelloGoodDay.SavedDataProperties";
+    public static final String SAVED_DESCRIP_FILE = "ca.yzlin.HelloGoodDay.SavedDescrip";
     public static final String BITMAP = "ca.yzlin.HelloGoodDay.bitmap";
 
     private static final String TAG = "MainActivity";
