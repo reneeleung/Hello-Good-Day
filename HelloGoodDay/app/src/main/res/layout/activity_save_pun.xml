@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.yzlin.hellogoodday.SavePun">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/save_btn"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="127dp"
+            android:layout_gravity="right"
+            android:layout_below="@+id/location_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="saveText" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        android:layout_alignParentBottom="true"
+        tools:context="ca.yzlin.hellogoodday.SavePun" />
+
+</RelativeLayout>
