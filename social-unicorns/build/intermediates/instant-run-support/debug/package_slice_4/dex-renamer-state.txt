@@ -1,0 +1,4 @@
+#Sat Feb 10 21:04:10 EST 2018
+base.0=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
+renamed.0=classes.dex
+file.0=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex

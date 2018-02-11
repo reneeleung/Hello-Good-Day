@@ -15,4 +15,7 @@ time Have you ever tried to eat a clock? It's very time consuming.
 girl I met a girl at an internet cafe, but we didn't click.
 exam Everything you want is out there waiting for you to ask. Everything you want also wants you. But you have to take action to get it.
 smile I'm smiling back at you.
+<<<<<<< HEAD
 cool Cool as a winter breeze.
+=======
+>>>>>>> c5272983e0c7c81dc3bd5d69852a696a7487c5e7
