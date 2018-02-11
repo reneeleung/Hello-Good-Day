@@ -75,6 +75,7 @@
         android:scaleType="fitCenter"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_below="@+id/sunPic"
-        android:layout_alignStart="@+id/sunPic" />
+        android:layout_alignStart="@+id/sunPic"
+        android:onClick="takePicture" />
 
 </RelativeLayout>
