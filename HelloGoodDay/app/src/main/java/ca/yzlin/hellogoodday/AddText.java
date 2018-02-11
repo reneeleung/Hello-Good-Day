@@ -32,16 +32,15 @@ import android.widget.TextView;
 
 
 public class AddText extends FragmentActivity implements OnMapReadyCallback {
-    private boolean hasLocation;
-    private double longitude;
-    private double latitude;
+    public boolean hasLocation;
+    public double longitude;
+    public double latitude;
     private Date dateTime;
     DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd_hh:mm:ss");
 
     private GoogleMap mMap;
     private Button b;
     EditText vibes;
-    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
