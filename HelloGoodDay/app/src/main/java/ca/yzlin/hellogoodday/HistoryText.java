@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -38,6 +39,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class HistoryText extends FragmentActivity implements OnMapReadyCallback{
     private SharedPreferences props;
@@ -75,9 +77,11 @@ public class HistoryText extends FragmentActivity implements OnMapReadyCallback{
                 String text = descrip.getString(descripId,"");
                 HGDEntry ent = new HGDEntry(arg[0], text, arg[2], longi, lati);
                 entries.add(ent);
+                String displayText = ent.getText() + "\n\tDate: " + ent.getDate() + "\n\n";
+
                 TextView tv = new TextView(this);
                 tv.setLayoutParams(lparams);
-                tv.setText(ent.getText());
+                tv.setText(displayText);
                 layout.addView(tv);
             }
         }
@@ -85,6 +89,22 @@ public class HistoryText extends FragmentActivity implements OnMapReadyCallback{
         final SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    public void changeView(View view){
+        ToggleButton tb = (ToggleButton) findViewById(R.id.view_btn);
+        ScrollView sv = (ScrollView) findViewById(R.id.scroll_view);
+        View map = findViewById(R.id.map);
+        if(tb.isChecked()) {
+            sv.setVisibility(View.VISIBLE);
+            map.setVisibility(View.INVISIBLE);
+        }
+        else{
+
+            sv.setVisibility(View.INVISIBLE);
+            map.setVisibility(View.VISIBLE);
+        }
+
     }
 
     public void refreshSets(){

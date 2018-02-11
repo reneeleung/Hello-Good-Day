@@ -27,4 +27,5 @@ public class HGDEntry{
     }
     boolean getHasLocation(){return this.hasLocation;}
     LatLng getLocation() { return new LatLng(this.latitude, this.longitude);}
+    String getDate() {return this.date;}
 }
