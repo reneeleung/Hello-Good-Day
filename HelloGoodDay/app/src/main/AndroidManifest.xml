@@ -15,6 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AddText"
+                  android:parentActivityName=".MainActivity" />
+        <activity android:name=".HistoryText"
+                  android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
