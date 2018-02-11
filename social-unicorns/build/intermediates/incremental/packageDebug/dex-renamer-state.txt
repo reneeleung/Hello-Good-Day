@@ -1,4 +1,4 @@
-#Sat Feb 10 20:21:49 EST 2018
+#Sat Feb 10 21:42:28 EST 2018
 base.0=/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a0175e08a60d7b3c614f2f6ecae799c6e601eadb
 renamed.1=classes.dex
 renamed.0=classes2.dex

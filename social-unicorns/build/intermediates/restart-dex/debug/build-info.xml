@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1518312108184"
+    timestamp="1518316935688"
     token="5264426221372591621"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -85,9 +85,6 @@
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
@@ -105,15 +102,18 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1518311071051"
+        timestamp="1518314645700"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1518312108184"
+        timestamp="1518316935688"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/reneeleung/AndroidStudioProjects/social-unicorns/app/build/outputs/apk/app-debug.apk"
