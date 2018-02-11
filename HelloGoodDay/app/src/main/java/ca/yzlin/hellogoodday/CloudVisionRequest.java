@@ -16,6 +16,7 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageButton;
@@ -38,6 +39,12 @@ import com.google.api.services.vision.v1.model.BatchAnnotateImagesResponse;
 import com.google.api.services.vision.v1.model.EntityAnnotation;
 import com.google.api.services.vision.v1.model.Feature;
 import com.google.api.services.vision.v1.model.Image;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
@@ -69,6 +76,10 @@ public class CloudVisionRequest extends AppCompatActivity {
     private Bitmap bitmap;
     private final String visionAPI = "LABEL_DETECTION";
 
+    private DatabaseReference mDatabase;
+    public static String pun;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,6 +98,9 @@ public class CloudVisionRequest extends AppCompatActivity {
         bitmap = (Bitmap) getIntent().getParcelableExtra(MainActivity.BITMAP);
         imageView.setImageBitmap(bitmap);
         //callCloudVision(bitmap, feature);
+
+        mDatabase = FirebaseDatabase.getInstance().getReference("data");
+
         try {
             callCloudVision(bitmap);
             imageView.setImageBitmap(bitmap);
@@ -146,6 +160,10 @@ public class CloudVisionRequest extends AppCompatActivity {
             //takePicture.setVisibility(View.INVISIBLE);
             makeRequest(android.Manifest.permission.CAMERA);
         }
+    }
+
+    private void writePun(String label, String quote) {
+        mDatabase.child("puns").child(label).setValue(quote);
     }
 
     private void callCloudVision(final Bitmap bitmap) throws IOException {
@@ -243,7 +261,7 @@ public class CloudVisionRequest extends AppCompatActivity {
                     labels.add(label);
                 }
 
-                HashMap<String, String> database = new HashMap<String, String>();
+                //HashMap<String, String> database = new HashMap<String, String>();
 
                 try {
                     InputStream is = assetManager.open("puns.txt");
@@ -254,7 +272,8 @@ public class CloudVisionRequest extends AppCompatActivity {
                         if (is != null) {
                             while ((line = reader.readLine()) != null) {
                                 String[] pair = line.split("\\|");
-                                database.put(pair[0],pair[1]);
+                                //database.put(pair[0],pair[1]);
+                                writePun(pair[0],pair[1]);
                             }
                         }
                         Log.d(TAG, "input stream is null");
@@ -265,17 +284,51 @@ public class CloudVisionRequest extends AppCompatActivity {
                     Log.d(TAG, "File reading failed because " + e.getMessage());
                 }
 
-                String pun = "";
+                pun = "";
                 for (int i = 0; i < labels.size(); ++i) {
-                    Log.d(TAG,"looking for label: " + labels.get(i));
-                    String var = database.get(labels.get(i));
+                    final String label_to_query = labels.get(i);
+                    Log.d(TAG,"looking for label: " + label_to_query);
+                    mDatabase.child("puns").orderByKey().equalTo(label_to_query).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            try {
+                                if (dataSnapshot.getValue() != null) {
+                                    try {
+                                        Log.d(TAG, ""+dataSnapshot.getValue());
+                                        String str = dataSnapshot.getValue().toString();
+                                        String[] result = str.split("=");
+                                        Log.d(TAG, label_to_query +": " + result[1].substring(0, result[1].length()-1));
+                                        pun = pun + label_to_query +": " + result[1].substring(0, result[1].length()-1) + "\n";
+                                        Log.d(TAG, "pun is now updated: " + pun);
+
+                                        if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
+                                        visionAPIData.setText(pun);
+                                        imageUploadProgress.setVisibility(View.GONE);
+
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+                                } else {
+                                    Log.d(TAG, "Firebase query result is null");
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            Log.d("onCancelled", " cancelled");
+                        }
+                    });
+                    /*String var = database.get(labels.get(i));
                     if (var != null) {
                         pun += labels.get(i) +": " + var + "\n";
-                    }
+                    }*/
                 }
-                if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
+                /*if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
                 visionAPIData.setText(pun);
-                imageUploadProgress.setVisibility(View.GONE);
+                imageUploadProgress.setVisibility(View.GONE);*/
             }
         }.execute();
     }

@@ -1,61 +1,19 @@
-bird|Doctors say not to worry about the bird flu because it's tweetable.
-older|I always wanted to marry an Archeologist. The older I would get, the more interested they would become!
-M&M|Going for a walk because I want to stay healthy. Taking along a box of M&M's because let's be honest here.
-gummy|I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that.
-cake|It's always a good idea to make friends with babies. That's free cake once a year for a lifetime.
-oreo|Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo.
-chips|Up until I bought this bag of chips I thought the air was free.
-seafood|I am on a seafood diet. Every time I see food, I eat it.
-vegetables|I was going to share a vegetable joke but it's corny.
-dog|Occasionally, a true friend gives their paw not their hand...
-people|TRUE FRIENDSHIP: Walking into a persons house and your wifi connects automatically.
-math|You give me Epsilon, I give you Delta. Together, we find limits.
-music|Music is in your soul.
-time|Have you ever tried to eat a clock? It's very time consuming.
-girl|I met a girl at an internet cafe, but we didn't click.
-exam|Everything you want is out there waiting for you to ask. Everything you want also wants you. But you have to take action to get it.
-smile|I'm smiling back at you.
+bird|Doctors say not to worry about the bird flu because it's tweetable
+older|I always wanted to marry an Archeologist, the older I would get, the more interested they would become!
+gummy|I hope when I inevitably choke to death on gummy bears people just say I was killed by bears and leave it at that
+cake|It's always a good idea to make friends with babies, that's free cake once a year for a lifetime
+oreo|Ice hockey is basically just guys wearing knife shoes fighting each other with long sticks for the last Oreo
+chips|Up until I bought this bag of chips I thought the air was free
+seafood|I am on a seafood diet, Every time I see food, I eat it
+vegetables|I was going to share a vegetable joke but it's corny
+dog|Occasionally, a true friend gives their paw not their hand
+people|TRUE FRIENDSHIP: Walking into a persons house and your wifi connects automatically
+math|You give me Epsilon, I give you Delta. Together, we find limits
+music|Putting your iPod on shuffle around your friends is like playing Russian roulette with their respect for you
+time|Have you ever tried to eat a clock? It's very time consuming
+girl|I met a girl at an internet cafe, but we didn't click
+exam|Everything you want is out there waiting for you to ask, Everything you want also wants you. But you have to take action to get it
+smile|I'm smiling back at you
+cool|Cool as a winter breeze
 face|Hello there! You have a cool face!
-glasses|Sometimes all you need is a new perspective.
-seminar|Work hard in silence, let your success be your noise.
-restaurant|Wisdom is never on the menu, you have to own the restaurant
-car|Best pickup line ever!
-technology|It's still magic even if you know how it's done
-cool|You is cool. You is smart. You is important!
-electronics|They are rather electrifying
-product|Have less. Do More. Be MORE.
-subwoofer|If we ampilfy everything, we hear nothing
-audio|Sometimes silence is a really good answer
-multimedia|You can buy likes but not hearts
-interiordesign|Small changes eventually add up to huge results
-ceiling|Always look up
-light|Within you is the light of a thousand suns
-exhibition|Imagine. Invent. Inspire.
-window|People offer you windows into different worlds
-collection|Say yes to new adventures
-footwear|Take life one step at a time
-shoe|Shoes are your soulmate
-floor|If you fall, I will be there
-leg|I will always support you!
-trousers|Put on your positive pants!
-Nothing|Regret nothing. Always move forward
-furniture|I hope you chair up soon!
-table|The tables have turned!
-wood|Don't bark up the wrong tree
-chair|Make it a rockin' chair!
-plastic|Don't be fake. Be REAL. Be YOU
-netbook|Keep writing new stories
-electronicdevice|Life was so much easier when Apple and BlackBerry were just fruits.
-laptop|Don't let the noise of others' opinions drown out your own inner voice
-games|Work hard. Play hard.
-recreation|Art is both creation and recreation
-day|Here comes the sun. Do Do DOooo
-yellow|A colour full of optimism
-meal|FOOOODDD
-cuisine|Fancay Food
-balloon|It's hard to be brought down when you have a balloon
-toy|To Infinity and beyond!
-partysupply|Partayyy
-drinkware|Remember to stay hydrated!
-functionhall|Halls lead down many paths
-room|There is always a good way out
+glasses|Sometimes all you need is a new perspective

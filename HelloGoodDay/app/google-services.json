@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "498689041535",
+    "firebase_url": "https://imagerecognizer-194817.firebaseio.com",
+    "project_id": "imagerecognizer-194817",
+    "storage_bucket": "imagerecognizer-194817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498689041535:android:dc6e8b085bda2a6a",
+        "android_client_info": {
+          "package_name": "ca.yzlin.hellogoodday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498689041535-or61407ps2noh06nm4v54dje8mmcqse1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSKacz0tzda_8h_dmGQ39EV6RA_h_8XK4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
