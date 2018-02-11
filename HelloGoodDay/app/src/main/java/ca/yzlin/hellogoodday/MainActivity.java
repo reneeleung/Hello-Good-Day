@@ -35,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void editpet(View view){
+        Intent intent = new Intent(this, HistoryText.class);
+        startActivity(intent);
+    }
+
     public void takePicture(View view){
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent, CAMERA_REQUEST_CODE);
