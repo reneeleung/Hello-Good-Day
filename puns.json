@@ -60,6 +60,10 @@
       {
         "key": "girl",
         "phrase": "I met a girl at an internet cafe, but we didn't click."
+      },
+      {
+        "key": "exam",
+        "phrase": "Everything you want is out there waiting for you to ask. Everything you want also wants you. But you have to take action to get it."
       }
     ]
   }
