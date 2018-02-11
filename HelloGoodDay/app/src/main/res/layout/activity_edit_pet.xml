@@ -8,15 +8,15 @@
         android:text="Customize your pet!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:textSize="36sp"
-        android:textColor="@color/cast_expanded_controller_background_color" />
+        android:textColor="@color/colorPrimaryDark" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="414dp"
         app:srcCompat="@drawable/blue_pink"
-        android:id="@+id/imageView2" />
+        android:id="@+id/imageView" />
 
     <Button
         android:text="Next Pet Outfit"

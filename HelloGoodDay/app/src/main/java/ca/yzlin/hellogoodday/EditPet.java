@@ -10,7 +10,7 @@ public class EditPet extends AppCompatActivity {
     private static ImageView imgview;
     private static Button save;
     private static Button nextPet;
-    private int current_image = 0;
+    private int current_image;
     int[]images = {R.drawable.blue, R.drawable.blue_green, R.drawable.blue_pink,
             R.drawable.green, R.drawable.multicolour, R.drawable.yellow_blue, R.drawable.yellow_pink,
             R.drawable.yellow_blue, R.drawable.pink_green, R.drawable.yellow, R.drawable.pink, R.drawable.yellow_green};
@@ -30,11 +30,12 @@ public class EditPet extends AppCompatActivity {
             new View.OnClickListener(){
                 @Override
                 public void onClick(View view){
-                    while(current_image < 12) {
-                       // current_image = current_image % images.length;
-                        imgview.setImageResource(images[current_image]);
+              //      while(current_image < 12) {
                         current_image++;
-                    }
+                        current_image = current_image % images.length;
+                        imgview.setImageResource(images[current_image]);
+                  //      current_image++;
+                  //  }
                 }
             }
         );
