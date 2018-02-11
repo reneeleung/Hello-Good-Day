@@ -3,6 +3,7 @@ package ca.yzlin.hellogoodday;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Handler;
@@ -37,9 +38,14 @@ import com.google.api.services.vision.v1.model.EntityAnnotation;
 import com.google.api.services.vision.v1.model.Feature;
 import com.google.api.services.vision.v1.model.Image;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class CloudVisionRequest extends AppCompatActivity {
@@ -56,6 +62,8 @@ public class CloudVisionRequest extends AppCompatActivity {
     TextView visionAPIData;
     ImageView imageView;
 
+    private AssetManager assetManager;
+
     private Feature feature;
     private Bitmap bitmap;
     private final String visionAPI = "LABEL_DETECTION";
@@ -69,6 +77,8 @@ public class CloudVisionRequest extends AppCompatActivity {
         imageUploadProgress = (ProgressBar) findViewById(R.id.imageUploadProgress);
         imageUploadProgress.setVisibility(View.GONE);
         visionAPIData = (TextView) findViewById(R.id.visionAPIData);
+
+        assetManager = getAssets();
 
         feature = new Feature();
         feature.setType(visionAPI);
@@ -194,13 +204,42 @@ public class CloudVisionRequest extends AppCompatActivity {
                 String [] objects = result.split("\n");
                 ArrayList<String> labels = new ArrayList<String>();
                 for (int i = 0; i < objects.length; ++i) {
-                    labels.add(objects[i].substring(0, objects[i].lastIndexOf(' ')));
+                    String label = objects[i].substring(0, objects[i].lastIndexOf(' '));
+                    label = label.replaceAll("\\s+","");
+                    labels.add(label);
+                }
+
+                HashMap<String, String> database = new HashMap<String, String>();
+
+                try {
+                    InputStream is = assetManager.open("puns.txt");
+                    Log.d(TAG, "found puns.txt in assets");
+                    try {
+                        String line = "";
+                        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+                        if (is != null) {
+                            while ((line = reader.readLine()) != null) {
+                                String[] pair = line.split("\\|");
+                                database.put(pair[0],pair[1]);
+                            }
+                        }
+                        Log.d(TAG, "input stream is null");
+                    } finally {
+                        try {is.close(); } catch (Throwable ignore) {}
+                    }
+                } catch (IOException e) {
+                    Log.d(TAG, "File reading failed because " + e.getMessage());
                 }
 
                 String pun = "";
                 for (int i = 0; i < labels.size(); ++i) {
-                    pun = pun + labels.get(i) + "; ";
+                    Log.d(TAG,"looking for label: " + labels.get(i));
+                    String var = database.get(labels.get(i));
+                    if (var != null) {
+                        pun += labels.get(i) +": " + var + "\n";
+                    }
                 }
+                if (pun == "") pun = "Sorry, no puns for your image. Please try again.";
                 visionAPIData.setText(pun);
                 imageUploadProgress.setVisibility(View.GONE);
             }
